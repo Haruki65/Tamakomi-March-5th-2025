@@ -14,7 +14,8 @@ export default function Home() {
   const activities = [
     { id: "1", title: "Activity 1", description: "Things that have inspired you" },
     { id: "2", title: "Activity 2", description: "Shaking things up for a fair shake." },
-    { id: "3", title: "Activity 3", description: "What do you want to learn next?" },
+    { id: "3", title: "Activity 3", description: "You are such an amazing writer." },
+    { id: "4", title: "Activity 4", description: "What do you want to learn next?" },
   ];
 
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           Hello, Tamakomi!
         </h1>
         <h2>
-          03/05/2025 Organized by Haruki. My 5th activity.
+          Organized by Haruki on March 5, 2025 - My 5th Activity.
         </h2>
         {/* Activity Buttons */}
         <div className="grid gap-4 sm:grid-cols-3 w-full max-w-lg">
@@ -42,13 +43,13 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <button
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44 cursor-pointer"
             onClick={() => window.open("https://www.perplexity.ai/", "_blank")}
           >
-            Search for Anything
+            Search Anything
           </button>
           <button
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44 cursor-pointer"
             onClick={pickDinner}
           >
             Dinner Picker
@@ -75,21 +76,7 @@ export default function Home() {
           />
           My Previous Activity
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://note.com/global_kansai"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to Global Kansai →
-        </a>
+
       </footer>
     </div>
   );

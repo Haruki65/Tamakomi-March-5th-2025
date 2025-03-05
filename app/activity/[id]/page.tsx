@@ -21,6 +21,10 @@ const activityData: Record<string, { title: string; content: string; image?: str
         image: "/fairness.jpg" // 画像パス追加
     },
     "3": {
+        title: "You are such an amazing writer.",
+        content: "If you were to become a blogger, what would you write about? What type of web platform would you use or create? Would you focus on sharing your favorite things, or would you delve into a specific niche?"
+    },
+    "4": {
         title: "What do you want to learn next?",
         content: "Share things you are curious about and want to explore further. It's a great topic to discuss for the rest of your spring vacation and beyond."
     }
